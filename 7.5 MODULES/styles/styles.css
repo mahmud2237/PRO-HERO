@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 /* PSEUDO CODE START HERE */
 ul {
     text-decoration: none;
@@ -82,3 +93,7 @@ li:;last-child{
     z-index: -1;
 }
 /* CSS Z INDEX POSITIONS ENDS HERE */
+
+p::first-letter{
+    font-size: 3em;
+}
