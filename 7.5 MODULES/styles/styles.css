@@ -1,0 +1,36 @@
+/* PSEUDO CODE START HERE */
+ul {
+    text-decoration: none;
+}
+h3{
+    color: blueviolet;
+}
+
+/* Hover means MouseOver */
+h3:hover{
+    color: rgb(255, 1, 1);
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+input:focus{
+    color: rgb(255, 153, 0);
+    padding-left: 25px;
+}
+a:visited{
+    color: green;
+}
+li:first-child{
+    color: black;
+}
+li:;last-child{
+    color: black;
+}
+/* PSEUDO CODE ENDS HERE */
+
+/* CSS POSITIONS STARTS HERE */
+
+/* CSS POSITIONS ENDS HERE */
