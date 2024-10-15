@@ -5,6 +5,17 @@ ul {
 h3{
     color: blueviolet;
 }
+h3::before{
+    content: "�Head�";
+    color: aquamarine;
+    font-size: 20px;
+    margin-right: 10px;
+}
+h3::after{
+    content: ".pdf";
+    color: chocolate;
+    font-size: 15px;
+}
 
 /* Hover means MouseOver */
 h3:hover{
@@ -32,5 +43,42 @@ li:;last-child{
 /* PSEUDO CODE ENDS HERE */
 
 /* CSS POSITIONS STARTS HERE */
+.box1{
+    border: 2px dotted sandybrown;
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
 
+.boy1{
+    position: fixed;
+    z-index: 1;
+}
+.ring1{
+    position: sticky;
+    z-index: 0;
+}
+.water1{
+    position: relative;
+    z-index: -1;
+}
 /* CSS POSITIONS ENDS HERE */
+/* ---------------------------------------------- */
+/* CSS Z INDEX POSITIONS STARTS HERE */
+.box2{
+    border: 2px dotted sandybrown;
+    position: relative;
+}
+
+.boy2{
+    z-index: 1;
+}
+.ring2{
+    top: -70px;
+
+}
+.water2{
+    top: -150px;
+    z-index: -1;
+}
+/* CSS Z INDEX POSITIONS ENDS HERE */
