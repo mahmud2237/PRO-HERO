@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Layout</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>1st Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio veniam nostrum porro rem repudiandae, reiciendis quaerat. Deserunt fugiat ipsa, esse mollitia commodi neque perspiciatis adipisci iusto at praesentium corporis.</p>
+        </div>
+        <div class="box">
+            <h3>2nd Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corporis provident odit mollitia animi doloremque tempore culpa numquam maxime. Natus harum atque obcaecati nostrum aspernatur ea? Odio rem modi aliquid.</p>
+        </div>
+    </div>
+</body>
+</html>
