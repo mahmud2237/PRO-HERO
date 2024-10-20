@@ -7,16 +7,205 @@
   font-style: normal;
 }
 
-.header, .navbar, .navbar-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    
+/* Body shared styles */
+.display-flex {
+  display: flex;
 }
 
-.navbar-ul li a{
+/* Dark 01 color */
+.text-gray1 {
+  color: #131313;
+}
+
+/* Dark 02 color */
+.text-gray2 {
+  color: #424242;
+}
+
+/* Dark 03 color */
+.text-gray3 {
+  color: #727272;
+}
+
+.text-orange {
+  color: #FF900E;
+}
+
+.bg-light {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main>section {
+  margin-top: 130px;
+}
+
+/* Header styles */
+
+.header {}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.nav-ul {
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+/* .navbar-ul li{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    list-style: none;
+} */
+
+/* for li */
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* for a */
+.nav-link {
+  text-decoration: none;
+}
+
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* Main team and feature related styles here */
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.quick-list {
+  font-weight: 500;
+}
+
+/* Some facts related styles */
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  
+}
+.fact-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+/* Responsive query start here */
+@media screen and (max-width: 576px) {
+
+  .navbar,
+  .nav-ul,
+  .teams {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    margin-left: 0 auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+  .navbar,
+  .nav-ul,
+  .teams {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-img-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-features {
+    margin-left: 20px auto;
+  }
 }
