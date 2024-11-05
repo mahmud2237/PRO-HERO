@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 18</title>
+    <title>Light on-off</title>
 </head>
 
 <body>
-    <script>
-        
-    </script>
+    <h1>Light on-off</h1>
+    <p>JavaScript can changes the value of the src attributes of an image</p>
+    <button onclick="document.getElementById('myImage').src = './on.gif'">Turn on the light</button>
+    <img src="./off.gif" alt="" id="myImage">
+    <button onclick="document.getElementById('myImage').src = './off.gif'">Turn off the light</button>
 </body>
 
 </html>
