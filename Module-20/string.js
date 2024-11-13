@@ -9,9 +9,9 @@ console.log('Country is:', typeof country ,'=>', 'Division is:', typeof division
 // Let's see String is immutable but array is mutable..
 const capital = 'Dha ka';
 console.log('Capital length is: ', capital.length);
-console.log(capital[0]);
 console.log(capital[1]);
-console.log(capital[2]);
+console.log(capital[3]);
+console.log(capital[5]);
 // String is immutable see below: 
 console.log(capital);
 capital[0] = 'F';   // But in array it's mutable or possible to change

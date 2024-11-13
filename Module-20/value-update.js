@@ -8,7 +8,7 @@ const person = {
 }
 //updates the values by using dot, bracket and variable methodes
 person.salary = 45000;
-person['fav n'] = 86;
+person['fav n'] = 86;  //Bracket notation works if your Object property name has space in it
 console.log(person);
 
 

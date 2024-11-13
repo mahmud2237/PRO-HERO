@@ -13,3 +13,15 @@ console.log('-------> Mobile values are: ');
 for(const value in mobile) {
     console.log(mobile[value]);
 }
+
+console.log('-------> Show Mobile Object property names in an array: ');
+const keys = Object.keys(mobile);
+console.log(keys);
+
+console.log('-------> Show Mobile Object property values in an array: ');
+const values = Object.values(mobile);
+console.log(values);
+
+
+
+
