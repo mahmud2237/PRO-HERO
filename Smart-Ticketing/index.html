@@ -7,13 +7,14 @@
     <title>E-ticketing System</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9427a11101.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="max-w-7xl mx-auto">
     <header>
         <div class="navbar flex justify-between bg-base-100">
             <div class="navbar-start">
-                <a class="btn btn-ghost text-4xl font-bold text-green-500">E-Ticket</a>
+                <a class="btn btn-ghost text-4xl font-bold text-green-500">E-Paribahan</a>
             </div>
             <div class="navbar-center hidden lg:flex ml-[-295px]">
                 <ul class="menu menu-horizontal">
@@ -22,8 +23,12 @@
                     <li><a>Destination</a></li>
                 </ul>
             </div>
-            <button class="navbar-end btn btn-outline btn-success w-28"><a href="#" class="inline-flex gap-3 text-2xl">Bus<img
-                        src="./images/bus-icon.png" alt=""></a></button>
+            <button class="navbar-end btn btn-outline btn-success w-28"><a href="#" class="inline-flex gap-3 text-2xl">Bus<img src="./images/bus-icon.png" alt=""></a></button>
+            <!-- <i class="fa-solid fa-bars hidden"></i> -->
+            <button id="menu-btn" class="sm:hidden block">
+                <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
+                <i id="close-icon" class="fa-solid fa-xmark sm:block hidden text-2xl bg-primary px-3 py-2 rounded"></i>
+            </button>
         </div>
         <div>
             <div class="carousel">
@@ -64,7 +69,7 @@
                     experiences for our clients, making travel a joyful and enjoyable experience for both travelers and
                     our guests.</p>
                 <a href="#" class="btn btn-success mt-8">Buy Tickets</a>
-                
+
                 <div class="flex justify-between gap-12 mt-14">
                     <div class="card card-side bg-white shadow-xl">
                         <figure>
@@ -93,7 +98,7 @@
                             <p>Registered Users</p>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
 
