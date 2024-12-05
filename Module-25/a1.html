@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Document Object Model</h1>
+    </header>
+    <main>
+        <section>
+            <h1 id="dom-title">My Awesome DOM re baba</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Rafayat Set</li>
+                <li>Bonobash Set</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Mango</li>
+                <li>apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul>
+                <li>Sundarban</li>
+                <li>Bandarban</li>
+                <li>Kataban</li>
+                <li>Cox's Bazar</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Document Object Model</h1>
+        <button id="changeColor">Change Color</button>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        const button = document.getElementById('changeColor');
+
+        button.addEventListener('click', function () {
+            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+
+</body>
+
+</html>
