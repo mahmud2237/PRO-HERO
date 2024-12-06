@@ -5,3 +5,6 @@ h1{
 li{
     color: rgb(241, 6, 241);
 }
+.fruits-container li{
+    color: green;
+}

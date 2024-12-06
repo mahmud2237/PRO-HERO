@@ -13,31 +13,31 @@
     <header>
         <h1>Welcome to Document Object Model</h1>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1 id="dom-title">My Awesome DOM re baba</h1>
             <ul>
-                <li>Jalali Set</li>
-                <li>Rafayat Set</li>
-                <li>Bonobash Set</li>
+                <li class="set-list">Jalali Set</li>
+                <li class="set-list">Rafayat Set</li>
+                <li class="set-list">Bonobash Set</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I like</h1>
             <ul>
-                <li>Mango</li>
-                <li>apple</li>
-                <li>Banana</li>
-                <li>Orange</li>
+                <li class="fruit-ilike">Mango</li>
+                <li class="fruit-ilike">Orange</li>
+                <li class="fruit-list">apple</li>
+                <li class="fruit-list">Banana</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text">
             <h1 id="places-title">Places I like to visit</h1>
             <ul>
-                <li>Sundarban</li>
-                <li>Bandarban</li>
-                <li>Kataban</li>
-                <li>Cox's Bazar</li>
+                <li class="important-places">Sundarban</li>
+                <li class="important-places">Bandarban</li>
+                <li class="important-places">Kataban</li>
+                <li class="important-places">Cox's Bazar</li>
             </ul>
         </section>
     </main>
@@ -48,6 +48,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/srcinJS.js"></script>
     <script>
         const button = document.getElementById('changeColor');
 
@@ -58,7 +59,7 @@
             document.body.style.backgroundColor = randomColor;
         });
     </script>
-
+    <script src="./js/style.js"></script>
 </body>
 
 </html>
