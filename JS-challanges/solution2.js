@@ -24,14 +24,32 @@ SAMPLE INPUT:  nadim.naem5@outlook.com      OUTPUT: nadim.naem5 sent you an emai
 SAMPLE INPUT:  fahim234.hotmail.com         OUTPUT: Invalid Email
 SAMPLE INPUT:  sadia8icloud.com             OUTPUT: Invalid Email
 
-*/ 
+*/
 
 function sendNotification(email) {
     const atRed = email.indexOf('@');
-    if(atRed === -1 || atRed === 0 || atRed === email.length - 1 || !email.includes('@')){
+    if (atRed === -1 || atRed === 0 || atRed === email.length - 1 || !email.includes('@')) {
         return 'Invalid Email';
-    }else{
+    } else {
         const [username, domain] = email.split('@');
         return `${username} sent you an email from ${domain}`;
     }
 }
+console.log(sendNotification('fahim@gmail.com'));
+/***
+    //system 2
+    if(email.split('').indexOf('@') === -1){
+        return 'Invalid Email';
+    }
+    let emailArr = email.split('@');
+    let notification1 = `${emailArr[0]} sent you an email from ${emailArr[1]}`;
+    return notification1;
+
+    //system 3
+    if(email.split('').includes('@') === false){
+        return 'Invalid Email';
+    }
+    let emailArr = email.split('@');
+    let notification2 = `${emailArr[0]} sent you an email from ${emailArr[1]}`;
+    return notification2;
+*/
