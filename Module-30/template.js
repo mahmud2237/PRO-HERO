@@ -16,3 +16,4 @@ Are you local here?
 What's your name?`;
 
 console.log(templete);
+console.log(`We can write Multi-line Strings with the Template Literals`);
