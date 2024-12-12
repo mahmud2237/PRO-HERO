@@ -39,10 +39,7 @@ function calculateFinalScore(obj) {
     }
     let finalScore = obj.testScore + obj.schoolGrade;
     if(obj.isFFamily){
-        finalScore += 20;
-        if(finalScore >= 80){
-            return 'true';
-        }
+        finalScore += 20; 
     }
-    return 'false';
+    return finalScore >= 80? true : false;
 }
