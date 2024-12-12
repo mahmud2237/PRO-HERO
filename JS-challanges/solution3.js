@@ -35,3 +35,14 @@ function checkDigitsInName(name) {
     }
     return false;
 }
+
+/***
+   let nameArr = name.split('');
+   for(let char of nameArr){
+    if(!isNaN(char)){
+        return true;
+    }
+        
+    } 
+    return false;
+*/
