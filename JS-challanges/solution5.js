@@ -44,3 +44,15 @@ function  waitingTime(waitingTimes  , serialNumber) {
     let serialNumberCandiateTime = remainingCandidate * averageTime;
     return serialNumberCandiateTime;
 }
+
+/***
+    let sum = 0;
+    for (let time of waitingTimes){
+        sum += time;
+    }
+    let averageTime = Math.round(sum / waitingTimes.length);
+    let leftPerson = (serialNumber - 1) - waitingTimes.length;
+    let serialNumCandidateTime = averageTime * leftPerson;
+    return serialNumCandidateTime;
+ */
+
