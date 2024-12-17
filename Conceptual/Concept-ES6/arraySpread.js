@@ -12,14 +12,14 @@ const arr2 = arr1;
 // to avoid this copy we need to use of spread operator (...arr1 or ...arr2)
 const array1 = [1, 2, 5, 6];
 
-// before ES6 we need to copy that to like below
+// before ES6 we need to copy that to like below and it's 3-4 lines of code
 const array2 = []
 for(let item of array1){
     array2.push(item);
 }
 console.log(array2); // [1, 2, 5, 6]
 
-// After using ES6 spread operator it's just one line of code
+// After using ES6 spread operator it's just one line of code to copy
 const array3 = [...array1];
 console.log(array3); // [1, 2, 5, 6]
 
