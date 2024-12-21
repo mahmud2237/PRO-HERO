@@ -23,7 +23,10 @@ console.log(array2); // [1, 2, 5, 6]
 const array3 = [...array1];
 console.log(array3); // [1, 2, 5, 6]
 
-
+// we can use array destructuring for calling the data below:
+const studentName = ['jodu', 'modu', 'kodu', 'sodu'];
+const [w, x, _,z] = studentName;
+console.log(w, x, z);
 
 
 
