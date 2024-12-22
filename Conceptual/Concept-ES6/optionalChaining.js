@@ -19,5 +19,4 @@ console.log(petOwner.name);
 console.log(petOwner.contact.phone);
 console.log(petOwner?.pet?.info?.color);  // optional chaining hasn't any side effect
 console.log(petOwner?.address?.houseNo);  // optional chaining is safe. always try to use Optional Chaining
-
 console.log(petOwner?.food[1]);
