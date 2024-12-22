@@ -31,15 +31,42 @@ const {contact.email} = myInfo;
 console.log(contact.email);
 */
 
-// Right way below
+// Right way to destructuring below
 // const {contact} = myInfo;
 // console.log(contact);
-// const {email} = contact;
+// const {email} = contact; 
 // console.log(email);
 
+
 // OR Direct can call like this
-const {email} = myInfo.contact;
+// const {email} = myInfo.contact;
+const {contact:{email}} = myInfo;
 console.log(email);
+
+// Now working with the dot notation, bracket notation
+const myId = {
+    name: 'mahmud',
+    age: 26,
+    address: 'ChirirBandar',
+    sosurName: 'Sallu Vai',
+    sosurBari: 'Chad',
+    contact: {
+        phone: 264676,
+        email: 'mahmud@gmail.com',
+    },
+};
+// object accessing
+for(let key in myId){
+    console.log(`${key} : ${myId[key]}`);
+}
+
+const x = 'sosurBari'; // key string 
+const y = myId.age; // dot notation
+const z = myId['contact']['phone']; // bracket notation // always use keys-values as an string
+console.log(myId[x]);
+console.log(y);
+console.log(z);
+
 
 
 
