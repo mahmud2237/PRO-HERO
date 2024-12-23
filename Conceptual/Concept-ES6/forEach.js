@@ -28,4 +28,4 @@ arr.forEach((item, index, whole) => {
 });
 
 
-
+// N: B: It's not possible to put forEach in a variable and get output. So, instead use map 
