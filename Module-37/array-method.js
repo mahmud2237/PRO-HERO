@@ -35,6 +35,6 @@ console.log(specificName);
 
 // use find to find out only one product or thing
 const special = products.find(p => p.name.includes('p'));
-console.log(`Find the name start with 'p' is: ` , special);
+console.log(`Find the name includes with 'p' is: ` , special);
 
 
