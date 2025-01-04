@@ -32,13 +32,29 @@
 // // conditional rendering option 4 : &&
 // export default function Todo({task, isDone}){
 //     return (
-//         <li>{task} {isDone && ': Done'}</li>
+//         <li>{task} {isDone && ': Done'}</li>  // if left is true than run right
 //     );
 // }
 
 // // conditional rendering option 5: ||
+// export default function Todo({task, isDone}){
+//     return (
+//         <li>{task} {isDone || ': Do it'}</li>  // if left is false than run right
+//     );
+// }
+
+// // conditional rendering option 6
 export default function Todo({task, isDone}){
-    return (
-        <li>{task} {isDone || ': Do it'}</li>
-    );
+    let listItem;
+    if(isDone){
+        listItem = <li>Finished: {task}</li>
+    }else{
+        listItem = <li>Working on: {task}</li>
+    }
+    return listItem;
 }
+
+
+
+
+
