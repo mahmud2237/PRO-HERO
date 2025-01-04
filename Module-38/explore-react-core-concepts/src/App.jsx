@@ -2,17 +2,21 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
   return (
     <>
       <h1>My First code in React</h1>
+      <Todo task='Learn JavaScript Basic' isDone={true}></Todo>
+      <Todo task='Learn JS ES6' isDone={true}></Todo>
+      <Todo task='Learn React' isDone={false}></Todo>
       <Person></Person>
       <Device name='Laptop' price='70000'></Device>
       <Device name='mobile' price='50000'></Device>
-      <Student></Student>
       <Developer></Developer>
-      <Student></Student>
+      <Student grade='7' score='99'></Student>
+      <Student name='Khan' grade={12} score='85'></Student>
       <Developer></Developer>
     </>
   );
@@ -30,7 +34,7 @@ function Person() {
 }
 
 function Device(props){
-  console.log(props);
+  // console.log(props);
   return(
     <div>
       <h3>Device Details: {props.name} Price: {props.price}</h3>
@@ -38,13 +42,15 @@ function Device(props){
   );
 }
 
-function Student() {
-  const stu = {name: 'Arian', age: 24}
+const {name, grade, score} = {name: 'Arian', grade: '7', score: '99'};
+function Student({name='Rittik', grade=1, score=0}) {
+  console.log(name, grade, score);
   return (
     <div className='student'>
       <h3>This is a student</h3>
-      <p>Name: {stu.name}</p>
-      <p>Age: {stu.age}</p>
+      <p>Name: {name}</p>
+      <p>Grade: {grade}</p>
+      <p>Score: {score}</p>
     </div>
   );
 }
