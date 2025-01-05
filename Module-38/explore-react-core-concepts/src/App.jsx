@@ -3,14 +3,45 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Todo from "./Todo";
+import Actor from "./Actor";
+import Singer from "./Singer";
+import BookStore from "./BookStore";
 
 function App() {
+
+  const actors = ['Salman Shah', 'Sakib', 'sadib', 'rajib', 'Raj', 'Jasim', 'Rubel'];
+  
+  const books = [
+    {id: 1, name: 'ontorjala', price: 120},
+    {id: 2, name: 'vag hasina vag', price: 130},
+    {id: 3, name: 'gore baire', price: 120},
+    {id: 4, name: 'chithi', price: 160},
+    {id: 5, name: 'kopalpora', price: 180},
+  ];
+  
+  const singers = [
+    {name:'Dr. Mahfuzur Rahman', age: 68},
+    {name:'Eva Rahman', age: 55},
+    {name:'Nanci', age: 46},
+    {name:'Pritom hasan', age: 38},
+
+  ];
+
+
   return (
     <>
       <h1>My First code in React</h1>
-      <Todo task='Learn JavaScript Basic' isDone={true}></Todo>
+      <BookStore books={books}></BookStore>
+      <Actor name={'Bappa Raz'}></Actor>
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+      {/* <Todo task='Learn JavaScript Basic' isDone={true}></Todo>
       <Todo task='Learn JS ES6' isDone={true}></Todo>
-      <Todo task='Learn React' isDone={false}></Todo>
+      <Todo task='Learn React' isDone={false}></Todo> */}
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
       <Person></Person>
       <Device name='Laptop' price='70000'></Device>
       <Device name='mobile' price='50000'></Device>
