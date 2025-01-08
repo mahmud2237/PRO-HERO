@@ -1,6 +1,8 @@
-# React + Vite
+# React World Tour
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ * REST API: https://restcountries.com/v3.1/all
+
+( Component => JSX => Props => eventHandler => State => useEffect -> asycronous data load)
 
 Currently, two official plugins are available:
 
