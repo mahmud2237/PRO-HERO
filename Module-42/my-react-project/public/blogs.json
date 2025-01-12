@@ -1,53 +1,43 @@
 [
     {
       "id": 1,
-      "cover": "https://cdn.pixabay.com/photo/2016/09/14/08/26/web-1668927_640.jpg",
+      "cover": "./images/1.jpg",
       "title": "The Quantum Enigma",
       "author": "Dr. Jane Doe",
-      "img": "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_1280.png",
+      "author_img": "https://cdn.pixabay.com/photo/2016/09/14/08/26/web-1668927_640.jpg",
       "posted_date": "2025-01-11",
       "reading_time": "15 minutes",
-      "hashtags": ["#QuantumPhysics", "#Mystery", "#SciFi"]
+      "hashtags": ["QuantumPhysics", "Mystery", "SciFi"]
     },
     {
       "id": 2,
-      "cover": "https://images.pexels.com/photos/5737454/pexels-photo-5737454.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "cover": "./images/2.png",
       "title": "Gourmet Travels",
       "author": "Chef John Smith",
-      "img": "https://images.pexels.com/photos/3851088/pexels-photo-3851088.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "author_img": "./images/3.png",
       "posted_date": "2025-01-10",
       "reading_time": "10 minutes",
-      "hashtags": ["#Cooking", "#Foodie", "#Recipes"]
+      "hashtags": ["Cooking", "Foodie", "Recipes"]
     },
     {
       "id": 3,
-      "cover": "https://images.pexels.com/photos/758744/pexels-photo-758744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "cover": "./images/4.jpg",
       "title": "Lost in the Wilderness",
       "author": "Emily Roberts",
-      "img": "https://images.pexels.com/photos/70361/california-parachutists-skydivers-flares-70361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "author_img": "https://images.pexels.com/photos/70361/california-parachutists-skydivers-flares-70361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "posted_date": "2025-01-09",
       "reading_time": "20 minutes",
-      "hashtags": ["#Adventure", "#Survival", "#Nature"]
+      "hashtags": ["Adventure", "Survival", "Nature"]
     },
     {
       "id": 4,
-      "cover": "https://www.pexels.com/photo/close-up-photo-of-programming-of-codes-546819/",
+      "cover": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "title": "AI Revolution",
       "author": "Mark A. Tech",
-      "img": "https://www.pexels.com/photo/code-projected-over-woman-3861969/",
+      "author_img": "./images/profile.png",
       "posted_date": "2025-01-08",
       "reading_time": "25 minutes",
-      "hashtags": ["#AI", "#Technology", "#Innovation"]
-    },
-    {
-      "id": 5,
-      "cover": "https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "Mindfulness in Daily Life",
-      "author": "Sophia Zen",
-      "img": "https://images.pexels.com/photos/4439452/pexels-photo-4439452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "posted_date": "2025-01-07",
-      "reading_time": "12 minutes",
-      "hashtags": ["#Mindfulness", "#Wellness", "#SelfHelp"]
+      "hashtags": ["AI", "Technology", "Innovation"]
     }
   ]
   
