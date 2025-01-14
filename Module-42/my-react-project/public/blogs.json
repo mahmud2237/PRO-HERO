@@ -6,7 +6,7 @@
       "author": "Dr. Jane Doe",
       "author_img": "https://cdn.pixabay.com/photo/2016/09/14/08/26/web-1668927_640.jpg",
       "posted_date": "2025-01-11",
-      "reading_time": "15 minutes",
+      "reading_time": 15,
       "hashtags": ["QuantumPhysics", "Mystery", "SciFi"]
     },
     {
@@ -16,7 +16,7 @@
       "author": "Chef John Smith",
       "author_img": "./images/3.png",
       "posted_date": "2025-01-10",
-      "reading_time": "10 minutes",
+      "reading_time": 10,
       "hashtags": ["Cooking", "Foodie", "Recipes"]
     },
     {
@@ -26,7 +26,7 @@
       "author": "Emily Roberts",
       "author_img": "https://images.pexels.com/photos/70361/california-parachutists-skydivers-flares-70361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "posted_date": "2025-01-09",
-      "reading_time": "20 minutes",
+      "reading_time": 20,
       "hashtags": ["Adventure", "Survival", "Nature"]
     },
     {
@@ -36,7 +36,7 @@
       "author": "Mark A. Tech",
       "author_img": "./images/profile.png",
       "posted_date": "2025-01-08",
-      "reading_time": "25 minutes",
+      "reading_time": 25,
       "hashtags": ["AI", "Technology", "Innovation"]
     }
   ]
