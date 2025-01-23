@@ -16,29 +16,29 @@ const Header = () => {
         </Link>
         <dialog id="home" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
-                <h3 className="font-bold text-lg">Congrats!</h3>
+                <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
                 <p className="py-4">Now you are on the Home Page..</p>
-                <div className="modal-action">
+                <div className="modal-action items-center justify-center">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn text-red-600">Close</button>
                     </form>
                 </div>
             </div>
         </dialog>
-        <Link to="/app">
+        <Link to="/users">
           <button className="btn btn-success" onClick={()=>document.getElementById('users').showModal()}>Users</button>
         </Link>
 
         
         <dialog id="users" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
-                <h3 className="font-bold text-lg">Congrats!</h3>
+                <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
                 <p className="py-4">Now you are on the Users Page..</p>
-                <div className="modal-action">
+                <div className="modal-action items-center justify-center">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn text-red-600">Close</button>
                     </form>
                 </div>
             </div>
@@ -50,12 +50,12 @@ const Header = () => {
         
         <dialog id="about" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
-                <h3 className="font-bold text-lg">Congrats!</h3>
+                <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
                 <p className="py-4">Now you are on the About Page..</p>
-                <div className="modal-action">
+                <div className="modal-action items-center justify-center">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn text-red-600">Close</button>
                     </form>
                 </div>
             </div>
@@ -67,12 +67,12 @@ const Header = () => {
         
         <dialog id="contact" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
-                <h3 className="font-bold text-lg">Congrats!</h3>
+                <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
                 <p className="py-4">Now you are on the Contact Page..</p>
-                <div className="modal-action">
+                <div className="modal-action items-center justify-center">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn text-red-600">Close</button>
                     </form>
                 </div>
             </div>
@@ -82,12 +82,12 @@ const Header = () => {
         </Link>
         <dialog id="support" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
-                <h3 className="font-bold text-lg">Congrats!</h3>
+                <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
                 <p className="py-4">Now you are on the Support Page..</p>
-                <div className="modal-action">
+                <div className="modal-action items-center justify-center">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn text-red-600">Close</button>
                     </form>
                 </div>
             </div>
