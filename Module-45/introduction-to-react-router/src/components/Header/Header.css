@@ -2,3 +2,6 @@ nav a{
     margin-right: 20px;
     text-decoration-line: none;
 }
+nav button{
+    margin-top: 10px;
+}

@@ -27,14 +27,14 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/app">
-          <button className="btn btn-success" onClick={()=>document.getElementById('app').showModal()}>App</button>
+          <button className="btn btn-success" onClick={()=>document.getElementById('users').showModal()}>Users</button>
         </Link>
 
         
-        <dialog id="app" className="modal modal-bottom sm:modal-middle">
+        <dialog id="users" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
                 <h3 className="font-bold text-lg">Congrats!</h3>
-                <p className="py-4">Now you are on the App Page..</p>
+                <p className="py-4">Now you are on the Users Page..</p>
                 <div className="modal-action">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
