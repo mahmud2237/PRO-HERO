@@ -7,3 +7,4 @@
 =>npm install react-router-dom localforage match-sorter sort-by
 =>npm run dev
 
+=>Then, change the main.jsx according to your needs for router access.
