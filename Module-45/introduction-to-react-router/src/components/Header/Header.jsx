@@ -1,10 +1,11 @@
 import "./Header.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useNavigation } from "react-router-dom";
 import head_img from '../../../public/react.png';
 import '../../App.css';
 import Footer from "../Footer/Footer";
 
 const Header = () => {
+    const navigation = useNavigation();
   return (
     <div className="space-x-3 text-white">
         <Link to='/' className="inline-flex justify-center items-center">
@@ -12,9 +13,10 @@ const Header = () => {
             <h2 className="text-4xl md:text-7xl font-extrabold text-[#00a6b5] mb-4">React Router</h2>
         </Link>
       <nav>
-        <Link to="/home">
+        {/* // when we add NavLink, it will add active class to the current link */}
+        <NavLink to="/home"> 
           <button className="btn btn-outline btn-info" onClick={()=>document.getElementById('home').showModal()}>Home</button>
-        </Link>
+        </NavLink>
         <dialog id="home" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
                 <h3 className="font-bold text-lg text-green-500">Congrats!</h3>
@@ -113,7 +115,12 @@ const Header = () => {
         </dialog>
         
       </nav>
-      <Outlet></Outlet>
+      {/* Here we use navigation and useNavigation */}
+      {
+        navigation.state === 'loading' ? 
+        <h1 className="mt-4 text-center text-3xl font-bold text-[#00a6b5]">Loading...</h1> : 
+        <Outlet></Outlet> // Or, <Outlet/>
+      }
       <div className="mt-10">
         <h1 className="text-center text-[#00a6b5] text-2xl font-bold">Welcome to React Router!</h1>
         <div className="mt-12">
