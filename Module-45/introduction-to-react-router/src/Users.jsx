@@ -13,7 +13,7 @@ function Users() {
   // fetch --> state set --> set state
 
   return (
-    <div className="flex flex-col text-white justify-center items-center gap-4">
+    <div className="flex flex-col text-white justify-center items-center space-y-4 mt-9">
       <h1 className="text-3xl font-bold mt-2">Our Total users is: {users.length}</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {

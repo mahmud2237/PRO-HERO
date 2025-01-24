@@ -7,13 +7,13 @@ import Footer from "../Footer/Footer";
 const Header = () => {
   return (
     <div className="space-x-3 text-white">
-        <Link to='/' className="flex justify-center items-center">
+        <Link to='/' className="inline-flex justify-center items-center">
             <img className="logo rounded-full" src={head_img} alt="logo" />
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-4">React Router</h2>
+            <h2 className="text-4xl md:text-7xl font-extrabold text-[#00a6b5] mb-4">React Router</h2>
         </Link>
       <nav>
         <Link to="/home">
-          <button className="btn btn-info" onClick={()=>document.getElementById('home').showModal()}>Home</button>
+          <button className="btn btn-outline btn-info" onClick={()=>document.getElementById('home').showModal()}>Home</button>
         </Link>
         <dialog id="home" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/users">
-          <button className="btn btn-success" onClick={()=>document.getElementById('users').showModal()}>Users</button>
+          <button className="btn btn-outline btn-success" onClick={()=>document.getElementById('users').showModal()}>Users</button>
         </Link>
         <dialog id="users" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/posts">
-          <button className="btn btn-primary" onClick={()=>document.getElementById('posts').showModal()}>Posts</button>
+          <button className="btn btn-outline btn-primary" onClick={()=>document.getElementById('posts').showModal()}>Posts</button>
         </Link>
         <dialog id="posts" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
@@ -58,7 +58,7 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/about">
-          <button className="btn btn-warning" onClick={()=>document.getElementById('about').showModal()}>About</button>
+          <button className="btn btn-outline btn-warning" onClick={()=>document.getElementById('about').showModal()}>About</button>
         </Link>
         <dialog id="about" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">
@@ -73,7 +73,7 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/contact">
-          <button className="btn btn-error" onClick={()=>document.getElementById('contact').showModal()}>Contact</button>
+          <button className="btn btn-outline btn-error" onClick={()=>document.getElementById('contact').showModal()}>Contact</button>
         </Link>
 
         
@@ -115,7 +115,7 @@ const Header = () => {
       </nav>
       <Outlet></Outlet>
       <div className="mt-10">
-        <h1 className="text-center text-2xl font-bold">Welcome to React Router!</h1>
+        <h1 className="text-center text-[#00a6b5] text-2xl font-bold">Welcome to React Router!</h1>
         <div className="mt-12">
             <Footer></Footer>
         </div>
