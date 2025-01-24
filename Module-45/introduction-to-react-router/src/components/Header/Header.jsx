@@ -78,7 +78,7 @@ const Header = () => {
             </div>
         </dialog>
         <Link to="/support">
-          <button className="btn btn-primary" onClick={()=>document.getElementById('support').showModal()}>Support</button>
+          <button className="btn btn-active btn-primary" onClick={()=>document.getElementById('support').showModal()}>Support</button>
         </Link>
         <dialog id="support" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">

@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import Support from './components/Support/Support.jsx';
+import UserDetails from './components/UserDetails/UserDetails.jsx';
 
 
 
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         path: '/support',
         element: <Support></Support>
       },
+      {
+        path: '/user/:userId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${(params.userId)}`),
+        element: <UserDetails></UserDetails>
+      }
     ]
   },
   

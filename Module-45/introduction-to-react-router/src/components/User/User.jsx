@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const User = ({user}) => {
     const {id, name, email, phone} = user;
@@ -15,6 +16,8 @@ const User = ({user}) => {
             <h1 className='font-bold text-xl'>ID: {id}, Name: {name}</h1>
             <p><span className='font-bold'>Phone:</span> {phone}</p>
             <p className='font-bold text-xs'>Email: {email}</p>
+            <Link to={`/user/${id}`} className='text-blue-600 mr-3'>Show More Details</Link>
+            <Link to={`/user/${id}`}><button className='btn btn-active btn-neutral'>Click Here</button></Link>
         </div>
     );
 };
