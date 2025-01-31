@@ -17,6 +17,7 @@ const addToStoredReadList = (id) =>{
     if(storedList.includes(id)){
         //already exists in the list. Don't add it again
         console.log(id, 'already exists in the list');
+        toast('Already exists in the list');
     }else{
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
